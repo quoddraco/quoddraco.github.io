@@ -1,0 +1,89 @@
+<header>
+
+<style>.carousel {
+    position: relative;
+    max-width: 400px; /* Уменьшаем максимальную ширину */
+    margin: 0 auto; /* Центрируем карусель на странице */
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease;
+    max-width: 100%;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 400px; /* Устанавливаем ширину каждого изображения */
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}</style>
+
+
+<script>
+let slideIndex = 0;
+
+function showSlides() {
+    const slides = document.querySelectorAll('.carousel-item');
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    } else if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
+    const offset = -slideIndex * 100 + '%';
+    document.querySelector('.carousel-content').style.transform = 'translateX(' + offset + ')';
+}
+
+function moveSlide(n) {
+    slideIndex += n;
+    showSlides();
+}
+
+setInterval(() => {
+    moveSlide(1);
+}, 3000);
+</script>
+
+
+<h1> Лего Бэтман</h1>
+</header>
+
+
+<body>
+  <div class="carousel">
+    <div class="carousel-content">
+        <div class="carousel-item"><img src="https://m.onlinetrade.ru/img/items/m/konstruktor_lego_76224_tbd_lsh_20_2022_2685638_1.jpg" alt="Image 1"></div>
+        <div class="carousel-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp1e2PzJirKXJiRfSmppi3Oka7Cc4sWLoP05n56Vedbw&s" alt="Image 2"></div>
+        <div class="carousel-item"><img src="image3.jpg" alt="Image 3"></div>
+    </div>
+    <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+    <a class="next" onclick="moveSlide(1)">&#10095;</a>
+</div>
+<script src="script.js"></script>
+  
+</body>
