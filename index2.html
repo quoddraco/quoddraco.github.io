@@ -1,0 +1,171 @@
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница студента</title>
+    <style> body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: red;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h2, main h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+main p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.intro, .topics, .topic {
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+main img {
+    display: block;
+    margin: 20px auto;
+}
+
+main a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Страница Демида
+      </h1>
+        <nav>
+            <button onclick="location.href='#home'">Главная</button>
+            <button onclick="location.href='#topics'">Темы</button>
+            <button onclick="location.href='#contact'">Контакты</button>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="intro">
+            <h2>Обо мне</h2>
+            <p>Добро пожаловать на мою страницу . Здесь вы найдете информацию о темах, которые были изучены за этот год, а также полезные ссылки и изображения.</p>
+        </section>
+        <section id="topics" class="topics">
+            <h2>Темы, которые я изучил </h2>
+            <ul>
+                <li><a href="#topic1">Тема 1:Construct 3</a></li>
+                <li><a href="#topic2">Тема 2:Piton </a></li>
+           
+                <li><a href="#topic3">Тема 3: Работа с Roblox Studio </a></li>
+           <li><a href="#topic4">Тема 4: Работа с Html</a></li>
+            </ul>
+        </section>
+        <section id="topic2" class="topic">
+            <h3>Тема 2:Piton </h3>
+            <p>Python (МФА: [ˈpʌɪθ(ə)n]; в русском языке встречаются названия пито́н или па́йтон) — высокоуровневый язык программирования общего назначения с динамической строгой типизацией и автоматическим управлением памятью, ориентированный на повышение производительности разработчика, читаемости кода и его качества, а также на обеспечение переносимости написанных на нём программ. Язык является полностью объектно-ориентированным в том плане, что всё является объектами. Необычной особенностью языка является выделение блоков кода отступами. Синтаксис ядра языка минималистичен, за счёт чего на практике редко возникает необходимость обращаться к документации. Сам же язык известен как интерпретируемый и используется в том числе для написания скриптов. Недостатками языка являются зачастую более низкая скорость работы и более высокое потребление памяти написанных на нём программ по сравнению с аналогичным кодом, написанным на компилируемых языках, таких как C или C++.Python (МФА: [ˈpʌɪθ(ə)n]; в русском языке встречаются названия пито́н или па́йтон) — высокоуровневый язык программирования общего назначения с динамической строгой типизацией и автоматическим управлением памятью, ориентированный на повышение производительности разработчика, читаемости кода и его качества, а также на обеспечение переносимости написанных на нём программ. Язык является полностью объектно-ориентированным в том плане, что всё является объектами. Необычной особенностью языка является выделение блоков кода отступами. Синтаксис ядра языка минималистичен, за счёт чего на практике редко возникает необходимость обращаться к документации. Сам же язык известен как интерпретируемый и используется в том числе для написания скриптов. Недостатками языка являются зачастую более низкая скорость работы и более высокое потребление памяти написанных на нём программ по сравнению с аналогичным кодом, написанным на компилируемых языках, таких как C или C++</p>
+            <img src="https://luxe-host.ru/wp-content/uploads/8/1/f/81f62ed882829d5097648dd07629cd0a.png" alt="HTML Example" style="width:100%; max-width:600px;">
+          
+        </section>
+        <section id="topic1" class="topic">
+            <h3>Тема 2:Construct 3</h3>
+            <p>Construct позволяет создавать 2D-игры различных жанров и сложности без навыков программирования[1]. Игры, сделанные на нём, могут быть доступны на PC, Mac, Linux, в браузерах с поддержкой HTML5, Android, iOS, Windows Phone, Blackberry 10, Amazon Appstore, Chrome Web Store, Facebook и пр.[2] Поддержка iOS и Android осуществляется благодаря технологиям CocoonJS от Ludei, directCanvas от appMobi и Intel XDK, которые используют аппаратное ускорение для увеличения производительности HTML5 игр в 5-10 раз.[3][значимость факта?]
+
+Интерфейс программы имеет визуальный (WYSIWYG) редактор, возможно создать игру без навыков программирования. В редакторе имеются «события» (англ. events) и «действия» (англ. actions), создающие логику[прояснить] игр[4].
+
+К приложению выпускаются обновления[5].
+
+Редактор позиционирует себя как «подходящий для людей с различным уровнем опыта программирования»[значимость факта?][6]. Доступна функция создания прототипа игры, демоверсий, презентаций, обучающих программ. По данным на 24 марта 2017 года велась разработка программы Construct 3[источник не указан 1859 дней].
+
+1 июля 2020 года Construct 2 был снят с продажи и больше не доступен для покупки. 1 июля 2021 года Construct 2 был полностью выведен из эксплуатации.[7]</p>
+            <img src="https://static.tildacdn.com/tild3439-6132-4762-a562-393336346366/-/resize/504x/Construct_3.png" alt="CSS Example" style="width:100%; max-width:600px;">
+    
+        </section>
+        <section id="topic3" class="topic">
+            <h3>Тема 3:Roblox Studio</h3>
+            <p>Roblox Studio рассчитан исключительно на создание трёхмерных игр, интерфейса к ним и внутриигровых вещей для Roblox; имеет встроенные редактор Luau[⇨], инструменты управления игровой средой, шаблоны игр и плагины. Также есть «Toolbox» (или же «Creator Marketplace»), представляющий собой хранилище моделей, изображений, аудио, плагинов и другого контента, создаваемого сообществом Roblox и его администраторами.</p>
+            <img src="https://projaker.com/wp-content/uploads/Roblox-Studio.jpg" alt="JavaScript Example" style="width:100%; max-width:600px;">
+            
+        </section>
+        <section id="topic4" class="topic">
+            <h3>Тема 4:Html</h3>
+            <p>HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык гипертекстовой разметки документов для просмотра веб-страниц в браузере. Веб-браузеры получают HTML документ от сервера по протоколам HTTP/HTTPS или открывают с локального диска, далее интерпретируют код в интерфейс, который будет отображаться на экране монитора.</p>
+            <img src="https://aurumcapital.ru/wp-content/uploads/2023/06/html.jpg" alt="API Example" style="width:100%; max-width:600px;">
+           
+        </section>
+    </main>
+    <footer id="contact">
+        <p>&copy; 2024 Страница студента. Все права защищены.</p>
+        <p>Контакты: <a href="DemidKey@yandex.ru">DemidKey@yandex.ru</a></p>
+      
+    </footer>
+</body>
+</html>
