@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница студента</title>
+    <style> body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #;
+}
+
+header {
+    background-color: #bdfbff;
+    color: ;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h2, main h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+main p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.intro, .topics, .topic {
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+main img {
+    display: block;
+    margin: 20px auto;
+}
+
+main a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #bdfbff;
+    color: #;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Страница студента Комарова александра</h1>
+        <nav>
+            <button onclick="location.href='#home'">Главная</button>
+            <button onclick="location.href='#topics'">Темы</button>
+            <button onclick="location.href='#contact'">Контакты</button>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="intro">
+            <h2>О мне</h2>
+            <p>всем привет я Саша и я учусь в C2212 в городе Владимир. Мой преподователь Павел очень понятно и круто отвечает. Сейчас я расскажу что мы проходили</p>
+        </section>
+        <section id="topics" class="topics">
+            <h2>Темы, которые изучил студент</h2>
+            <ul>
+                <li><a href="#topic1">Тема 1: construkt и youtube</a></li>
+                <li><a href="#topic2">Тема 2: работа в phyton и mit app inventor</a></li>
+                <li><a href="#topic3">Тема 3: roblox studio</a></li>
+                <li><a href="#topic4">Тема 4: Codepen</a></li>
+            </ul>
+        </section>
+        <section id="topic1" class="topic">
+            <h3>Тема 1: construkt и youtube</h3>
+            <p>в construct мы делали игры в формате 2d. Учились программировать врагов и вещи похожие на монеты. А в ютубе мы учились монтировать и снимать
+              видео</p>
+            <img src="https://sun1-27.userapi.com/s/v1/ig2/GhE_ngkIYT8IKlyo1jPwTzAFl0hvmnFrbOS64eXrhM79VuGiwGjruoYyjaj6bBzLSvnGHwZ_PhPO-Z3cKdBU_FZH.jpg?size=1600x1600&quality=95&crop=0,0,1600,1600&ava=1" alt="https://i.ytimg.com/vi/f3savqmIn4k/maxresdefault.jpg" style="width:100%; max-width:600px;">
+            <p>Подробнее: <a href="https://editor.construct.net/" target="_blank">konstrukt</a></p>
+        </section>
+        <section id="topic2" class="topic">
+            <h3>Тема 2: работа в phyton и mit app inventor</h3>
+            <p>в phyton мы учим рисовать ( программировать
+              ) черепаху. Там есть 4 основные комманды: вверх, вниз, вправо, влево. Там можно установить размер и цвет карандаша черепашки. В mit app inventor мы делали приложения. Но мне не приходило идей кроме прилоджение-антистресс</p>
+            <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65a19bf1f36a96421018a628_65a19c557b58cc606ea64c20/scale_1200" alt="CSS Example" style="width:100%; max-width:600px;">
+            <p>Подробнее: <a href="https://learn.python.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=ya_direct&calltouch_tm=yd_c:27778295_gb:2892239073_ad:4686461022_ph:10789906829_st:search_pt:premium_p:1_s:none_dt:desktop_reg:192_ret:10789906829_apt:none&yclid=16843425519513370623" target="_blank">phyton</a></p>
+        </section>
+        <section id="topic3" class="topic">
+            <h3>Тема 3: roblox studio</h3>
+            <p>roblox-это популярная компьютерная игра с разными плейсами (картами). А так же там есть роблокс студио где можно создать свою же игру. Мне отдельно понравилась эта тема</p>
+            <img src="https://avatars.mds.yandex.net/i?id=09527337960225f1187f79188b0efd08d737dd93-12488046-images-thumbs&n=13" alt="JavaScript Example" style="width:100%; max-width:600px;">
+            <p>Подробнее: <a href="https://create.roblox.com/" target="_blank">roblox create</a></p>
+        </section>
+        <section id="topic4" class="topic">
+            <h3>Тема 4: codepen</h3>
+            <p>это сайт для создания сайтов. В программе есть 3 строки: HTML, CSS, JS. На данный момент мы не проходили JS. Но в основном нам просто создавать там довольно крутые и простые сайты</p>
+            <img src="https://avatars.mds.yandex.net/i?id=17dca4026b32454795545221d82f1824-3028206-images-thumbs&n=13" alt="API Example" style="width:100%; max-width:600px;">
+            <p>Подробнее: <a href="https://codepen.io/?basket" target="_blank">codepen</a></p>
+        </section>
+    </main>
+    <footer id="contact">
+        <p>&copy; 2024 Страница Комарова Александра. Все права защищены.</p>
+        <p>Контакты: <a href="">их нет</a></p>
+    </footer>
+</body>
+</html>
